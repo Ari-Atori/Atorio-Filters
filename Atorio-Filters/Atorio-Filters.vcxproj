@@ -144,6 +144,7 @@
     <ClCompile Include="core\Packet.cpp" />
     <ClCompile Include="hue-saturation-luma.cpp" />
     <ClCompile Include="init.cpp" />
+    <ClCompile Include="whitebalance.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="core\Complex.hpp" />
