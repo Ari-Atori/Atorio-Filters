@@ -1,13 +1,13 @@
 {
-  "code": "?hsy_compute@@YAX_KPEAX@Z",
+  "code": "?cb_compute@@YAX_KPEAX@Z",
   "usesgpu": true,
   "shaders": [
     {
       "name": "shader",
       "outputs": [
         {
-          "name": "",
-          "type": "",
+          "name": "colorblindness",
+          "type": "mat4",
           "size": 1
         }
       ]
@@ -15,12 +15,20 @@
   ],
   "inputs": [
     {
-      "name": "",
-      "type": "",
+      "name": "severity",
+      "type": "float",
       "min": 0,
-      "max": 0,
+      "max": 1,
       "default": 0,
       "step": 0
+    },
+    {
+      "name": "colorblindness",
+      "type": "int",
+      "min": 0,
+      "max": 2,
+      "default": 0,
+      "step": 1
     }
   ],
   "content": [

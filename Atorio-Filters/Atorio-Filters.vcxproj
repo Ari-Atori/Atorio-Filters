@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="colorblindness.cpp" />
     <ClCompile Include="contrast.cpp" />
     <ClCompile Include="core\Matrix.cpp" />
     <ClCompile Include="core\Packet.cpp" />
