@@ -1,0 +1,114 @@
+{
+  "code": "?hsy_compute@@YAX_KPEAX@Z",
+  "usesgpu": true,
+  "shaders": [
+    {
+      "name": "shader",
+      "outputs": [
+        {
+          "name": "hsya",
+          "type": "vec4",
+          "size": 1
+        }
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "name": "hue",
+      "type": "float",
+      "min": -360.0,
+      "max": 360.0,
+      "default": 0.0
+    },
+    {
+      "name": "saturation",
+      "type": "float",
+      "min": 0.0,
+      "max": 4.0,
+      "default": 1.0
+    },
+    {
+      "name": "luma",
+      "type": "float",
+      "min": 0.0,
+      "max": 4.0,
+      "default": 1.0
+    }
+  ],
+  "content": [
+    {
+      "type": "slider",
+      "affects": [ "hue" ],
+      "x": 0,
+      "y": 0,
+      "w": 5,
+      "h": 1,
+      "orientation": "horizontal",
+      "color": {
+        "x": [ 0, 1 ],
+        "c": [
+          [ 0, 0, 0 ],
+          [ 0, 0, 0 ]
+        ]
+      }
+    },
+    {
+      "type": "reset",
+      "affects": [ "hue" ],
+      "x": 5,
+      "y": 0,
+      "w": 1,
+      "h": 1
+    },
+    {
+      "type": "slider",
+      "affects": [ "saturation" ],
+      "x": 0,
+      "y": 1,
+      "w": 5,
+      "h": 1,
+      "orientation": "horizontal",
+      "color": {
+        "x": [ 0, 1 ],
+        "c": [
+          [ 0, 0, 0 ],
+          [ 0, 0, 0 ]
+        ]
+      }
+
+    },
+    {
+      "type": "reset",
+      "affects": [ "saturation" ],
+      "x": 5,
+      "y": 1,
+      "w": 1,
+      "h": 1
+    },
+    {
+      "type": "slider",
+      "affects": [ "lightness" ],
+      "x": 0,
+      "y": 2,
+      "w": 5,
+      "h": 1,
+      "orientation": "horizontal",
+      "color": {
+        "x": [ 0, 1 ],
+        "c": [
+          [ 0, 0, 0 ],
+          [ 0, 0, 0 ]
+        ]
+      }
+    },
+    {
+      "type": "reset",
+      "affects": [ "lightness" ],
+      "x": 5,
+      "y": 2,
+      "w": 1,
+      "h": 1
+    }
+  ]
+}

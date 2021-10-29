@@ -1,0 +1,60 @@
+{
+  "code": "?cb_compute@@YAX_KPEAX@Z",
+  "usesgpu": true,
+  "shaders": [
+    {
+      "name": "shader",
+      "outputs": [
+        {
+          "name": "colorblindness",
+          "type": "mat4",
+          "size": 1
+        }
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "name": "severity",
+      "type": "float",
+      "min": 0,
+      "max": 1,
+      "default": 0,
+      "step": 0
+    },
+    {
+      "name": "colorblindness",
+      "type": "int",
+      "min": 1,
+      "max": 3,
+      "default": 1,
+      "step": 1
+    }
+  ],
+  "content": [
+    {
+      "type": "",
+      "affects": [ "" ],
+      "x": 0,
+      "y": 0,
+      "w": 1,
+      "h": 1,
+      "orientation": "",
+      "color": {
+        "x": [ 0, 1 ],
+        "c": [
+          [ 0, 0, 0 ],
+          [ 0, 0, 0 ]
+        ]
+      }
+    },
+    {
+      "type": "reset",
+      "affects": [ "" ],
+      "x": 1,
+      "y": 0,
+      "w": 1,
+      "h": 1
+    }
+  ]
+}

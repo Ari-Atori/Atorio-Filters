@@ -1,0 +1,100 @@
+{
+  "code": "?transform_compute@@YAX_KPEAX@Z",
+  "usesgpu": true,
+  "shaders": [
+    {
+      "name": "shader",
+      "outputs": [
+        {
+          "name": "transform",
+          "type": "mat4",
+          "size": 1
+        }
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "name": "sx",
+      "type": "float",
+      "min": 0,
+      "max": 8,
+      "default": 0,
+      "step": 0
+    },
+    {
+      "name": "sy",
+      "type": "float",
+      "min": -8,
+      "max": 8,
+      "default": 0,
+      "step": 0
+    },
+    {
+      "name": "kx",
+      "type": "float",
+      "min": 0,
+      "max": 8,
+      "default": 0,
+      "step": 0
+    },
+    {
+      "name": "ky",
+      "type": "float",
+      "min": -8,
+      "max": 8,
+      "default": 0,
+      "step": 0
+    },
+    {
+      "name": "r",
+      "type": "float",
+      "min": -8,
+      "max": 8,
+      "default": 0,
+      "step": 0
+    },
+    {
+      "name": "tx",
+      "type": "float",
+      "min": 0,
+      "max": 8,
+      "default": 0,
+      "step": 0
+    },
+    {
+      "name": "ty",
+      "type": "float",
+      "min": 0,
+      "max": 8,
+      "default": 0,
+      "step": 0
+    }
+  ],
+  "content": [
+    {
+      "type": "",
+      "affects": [ "" ],
+      "x": 0,
+      "y": 0,
+      "w": 1,
+      "h": 1,
+      "orientation": "",
+      "color": {
+        "x": [ 0, 1 ],
+        "c": [
+          [ 0, 0, 0 ],
+          [ 0, 0, 0 ]
+        ]
+      }
+    },
+    {
+      "type": "reset",
+      "affects": [ "" ],
+      "x": 1,
+      "y": 0,
+      "w": 1,
+      "h": 1
+    }
+  ]
+}
