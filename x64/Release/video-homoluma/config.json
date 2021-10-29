@@ -1,13 +1,18 @@
 {
-  "code": "?hsy_compute@@YAX_KPEAX@Z",
+  "code": "?homoluma_compute@@YAX_KPEAX@Z",
   "usesgpu": true,
   "shaders": [
     {
       "name": "shader",
       "outputs": [
         {
-          "name": "",
-          "type": "",
+          "name": "luma",
+          "type": "float",
+          "size": 1
+        },
+        {
+          "name": "prop",
+          "type": "float",
           "size": 1
         }
       ]
@@ -15,10 +20,18 @@
   ],
   "inputs": [
     {
-      "name": "",
-      "type": "",
+      "name": "luma",
+      "type": "float",
       "min": 0,
-      "max": 0,
+      "max": 1,
+      "default": 0,
+      "step": 0
+    },
+    {
+      "name": "prop",
+      "type": "float",
+      "min": 0,
+      "max": 1,
       "default": 0,
       "step": 0
     }

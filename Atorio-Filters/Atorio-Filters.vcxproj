@@ -143,8 +143,10 @@
     <ClCompile Include="contrast.cpp" />
     <ClCompile Include="core\Matrix.cpp" />
     <ClCompile Include="core\Packet.cpp" />
+    <ClCompile Include="homoluma.cpp" />
     <ClCompile Include="hue-saturation-luma.cpp" />
     <ClCompile Include="init.cpp" />
+    <ClCompile Include="transform.cpp" />
     <ClCompile Include="whitebalance.cpp" />
   </ItemGroup>
   <ItemGroup>

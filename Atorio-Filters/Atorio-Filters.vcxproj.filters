@@ -36,6 +36,12 @@
     <ClCompile Include="colorblindness.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="homoluma.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="transform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="core\Complex.hpp">

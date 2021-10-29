@@ -52,7 +52,7 @@
       "name": "lumpres",
       "type": "float",
       "min": 0,
-      "max": 0,
+      "max": 1,
       "default": 0,
       "step": 0
     }
